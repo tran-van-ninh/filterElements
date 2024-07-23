@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #0f9d58;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.container{
+    width: 1200px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #e2f3e2;
+    margin: 100px auto;
+    
+}
+
+.control{
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 40px;
+}
+
+button{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.25s;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.wrap-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 900px;
+    gap:20px;
+}
+
+.wrap-image div{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.scale{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s linear;
+}
+
+.rotate{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hide{
+    display: none;
+}
+
+.scale:hover{
+    transform:scale(1.3);
+}
+
+.rotate:hover{
+    transform: rotate(90deg);
+}
+
+.active{
+    background: var(--primary-color);
+    color: #fff;
+}
